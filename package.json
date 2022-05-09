@@ -1,0 +1,32 @@
+{
+  "name": "cloudfront-to-combined-log-format",
+  "version": "1.0.0",
+  "description": "Transform CloudFront logs to Combined Log Format",
+  "bin": "cli.js",
+  "type": "module",
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
+  },
+  "keywords": [
+    "cloudfront",
+    "logs",
+    "apache",
+    "nginx",
+    "common-log-format",
+    "combined-log-format"
+  ],
+  "engines": {
+    "node": ">=16",
+    "npm": ">=8"
+  },
+  "author": "Tom Vincent <git@tlvince.com> (https://tlvince.com/)",
+  "license": "MIT",
+  "files": [
+    "lib/*.js",
+    "!lib/*.test.js",
+    "*.js"
+  ],
+  "devDependencies": {
+    "jest": "28.1.0"
+  }
+}
