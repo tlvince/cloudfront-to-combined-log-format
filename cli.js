@@ -11,4 +11,10 @@ const readline = createInterface({
   terminal: false,
 });
 
-readline.on("line", (line) => process.stdout.write(`${format(parse(line))}\n`));
+readline.on("line", (line) => {
+  const parsed = parse(line);
+  if (!parsed) {
+    return;
+  }
+  process.stdout.write(`${format(parsed)}\n`);
+});
